@@ -1,0 +1,112 @@
+{
+ "id": "c-103",
+ "direction": "outbound",
+ "managerId": "u-leo",
+ "customer": {
+  "company": "Mercato Foods",
+  "contact": "Daniel Ruiz",
+  "phone": "+1 555 0113"
+ },
+ "startedAt": "2026-10-12T15:05",
+ "language": "en",
+ "audio": {
+  "channels": 2,
+  "durationSec": 75
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 1.65,
+    "end": 2.77,
+    "channel": 1,
+    "text": "Daniel Ruiz.",
+    "confidence": 0.91
+   },
+   {
+    "start": 3.39,
+    "end": 13.45,
+    "channel": 0,
+    "text": "Hi Daniel, it's Leo from Northwind Air. I'm calling about the quote we sent last week for the cold store extraction, the eight rectangular fans.",
+    "confidence": 0.93
+   },
+   {
+    "start": 14.24,
+    "end": 22.09,
+    "channel": 1,
+    "text": "Ah, yes. Look, Leo, I'll be honest, we have an offer from another supplier that's about twelve percent lower.",
+    "confidence": 0.95
+   },
+   {
+    "start": 23.04,
+    "end": 26.76,
+    "channel": 0,
+    "text": "Twelve percent, okay. Which models did they offer?",
+    "confidence": 0.97
+   },
+   {
+    "start": 27.24,
+    "end": 30.69,
+    "channel": 1,
+    "text": "I'd have to check, something comparable, same size.",
+    "confidence": 0.92
+   },
+   {
+    "start": 31.34,
+    "end": 39.5,
+    "channel": 0,
+    "text": "Look, I don't want to lose you over this. I can do fifteen percent off the whole order, no problem.",
+    "confidence": 0.93
+   },
+   {
+    "start": 40.32,
+    "end": 47.42,
+    "channel": 1,
+    "text": "Fifteen? Okay, that changes things. And can you deliver by Friday? The installers are booked for Monday.",
+    "confidence": 0.95
+   },
+   {
+    "start": 48.4,
+    "end": 54.83,
+    "channel": 0,
+    "text": "Friday is no problem, I guarantee it. We'll have them to you by Thursday even.",
+    "confidence": 0.97
+   },
+   {
+    "start": 55.35,
+    "end": 57.66,
+    "channel": 1,
+    "text": "All eight units? The sixty-thirty-fives?",
+    "confidence": 0.92
+   },
+   {
+    "start": 58.34,
+    "end": 61.53,
+    "channel": 0,
+    "text": "Yes, all eight. Don't worry about it.",
+    "confidence": 0.94
+   },
+   {
+    "start": 62.4,
+    "end": 67.62,
+    "channel": 1,
+    "text": "Alright then. Send me the revised quote and I'll sign it today.",
+    "confidence": 0.96
+   },
+   {
+    "start": 68.33,
+    "end": 71.52,
+    "channel": 0,
+    "text": "Will do, within the hour. Thanks Daniel.",
+    "confidence": 0.94
+   },
+   {
+    "start": 72.03,
+    "end": 73.19,
+    "channel": 1,
+    "text": "Thanks, bye.",
+    "confidence": 0.92
+   }
+  ]
+ }
+}

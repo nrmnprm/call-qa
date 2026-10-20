@@ -1,0 +1,126 @@
+{
+ "id": "c-111",
+ "direction": "inbound",
+ "managerId": "u-priya",
+ "customer": {
+  "company": "Lakeview Dental",
+  "contact": "Omar Haddad",
+  "phone": "+1 555 0122"
+ },
+ "startedAt": "2026-10-14T15:40",
+ "language": "en",
+ "audio": {
+  "channels": 1,
+  "durationSec": 105
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 1.71,
+    "end": 4.41,
+    "speaker": 1,
+    "text": "Good afternoon, Northwind Air, Priya speaking.",
+    "confidence": 0.92
+   },
+   {
+    "start": 5.45,
+    "end": 14.23,
+    "speaker": 0,
+    "text": "Hi, Omar Haddad, Lakeview Dental. We're replacing the bathroom extract fans in the clinic, four small ones, a hundred millimetre ducts.",
+    "confidence": 0.98
+   },
+   {
+    "start": 15.07,
+    "end": 20.65,
+    "speaker": 1,
+    "text": "Thanks, Omar. Are they on a light switch or running all the time?",
+    "confidence": 0.96
+   },
+   {
+    "start": 21.33,
+    "end": 24.51,
+    "speaker": 0,
+    "text": "On the light switch, with a timer.",
+    "confidence": 0.94
+   },
+   {
+    "start": 25.05,
+    "end": 32,
+    "speaker": 1,
+    "text": "Okay. And how long are the ducts, roughly? Straight out through the wall or through the ceiling?",
+    "confidence": 0.92
+   },
+   {
+    "start": 32.38,
+    "end": 35.39,
+    "speaker": 0,
+    "text": "Through the ceiling, maybe four metres each.",
+    "confidence": 0.9
+   },
+   {
+    "start": 36.27,
+    "end": 51.48,
+    "speaker": 1,
+    "text": "Then the NW-ID-100 will do it, eighty-five dollars each. There's also the EC version, the NW-ID-100E, at a hundred twenty-five; it's quieter and uses about half the power. For a clinic with patients nearby some customers prefer it.",
+    "confidence": 0.96
+   },
+   {
+    "start": 52.19,
+    "end": 56.16,
+    "speaker": 0,
+    "text": "Forty dollars more each, hmm. What would you take?",
+    "confidence": 0.94
+   },
+   {
+    "start": 56.74,
+    "end": 69.86,
+    "speaker": 1,
+    "text": "If the fans only run when the lights are on, the savings are small, so the standard one is perfectly fine. I'd only pick the EC one if noise matters in those rooms.",
+    "confidence": 0.93
+   },
+   {
+    "start": 70.27,
+    "end": 74.07,
+    "speaker": 0,
+    "text": "Then the standard ones. Can you send a quote?",
+    "confidence": 0.91
+   },
+   {
+    "start": 75.1,
+    "end": 88.87,
+    "speaker": 1,
+    "text": "Yes, four NW-ID-100 with delivery. Delivery is free above fifteen hundred dollars, so for this order there's a courier charge of twenty-five dollars. I'll email the quote today, and it's valid for fourteen days.",
+    "confidence": 0.98
+   },
+   {
+    "start": 89.38,
+    "end": 92.84,
+    "speaker": 0,
+    "text": "Perfect. Email is omar at lakeviewdental dot com.",
+    "confidence": 0.92
+   },
+   {
+    "start": 93.55,
+    "end": 97.89,
+    "speaker": 1,
+    "text": "Got it. If you confirm by Friday, they ship Monday.",
+    "confidence": 0.94
+   },
+   {
+    "start": 98.77,
+    "end": 100.52,
+    "speaker": 0,
+    "text": "Great, thank you.",
+    "confidence": 0.96
+   },
+   {
+    "start": 100.89,
+    "end": 102.74,
+    "speaker": 1,
+    "text": "Thank you, Omar, bye.",
+    "confidence": 0.9
+   }
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+id: c-103
+direction: outbound
+manager: u-leo
+company: Mercato Foods
+contact: Daniel Ruiz
+phone: +1 555 0113
+started: 2026-10-12T15:05
+audio: stereo
+language: en
+---
+C: Daniel Ruiz.
+M: Hi Daniel, it's Leo from Northwind Air. I'm calling about the quote we sent last week for the cold store extraction, the eight rectangular fans.
+C: Ah, yes. Look, Leo, I'll be honest, we have an offer from another supplier that's about twelve percent lower.
+M: Twelve percent, okay. Which models did they offer?
+C: I'd have to check, something comparable, same size.
+M: Look, I don't want to lose you over this. I can do fifteen percent off the whole order, no problem.
+C: Fifteen? Okay, that changes things. And can you deliver by Friday? The installers are booked for Monday.
+M: Friday is no problem, I guarantee it. We'll have them to you by Thursday even.
+C: All eight units? The sixty-thirty-fives?
+M: Yes, all eight. Don't worry about it.
+C: Alright then. Send me the revised quote and I'll sign it today.
+M: Will do, within the hour. Thanks Daniel.
+C: Thanks, bye.

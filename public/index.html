@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Call QA demo</title>
+  <meta name="description" content="Sales call quality review: diarized transcripts scored against a scorecard, with verified evidence, red flags and team analytics.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">N</span>
+      <div>
+        <h1><span id="company">Northwind Air</span> · Call QA</h1>
+        <p class="sub">Sales call review demo · fictional company and data</p>
+      </div>
+    </div>
+    <div class="top-right">
+      <span id="queue" class="badge" hidden></span>
+      <span id="mode" class="badge">…</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="side" aria-label="Sections">
+      <button class="nav on" data-view="calls">Calls</button>
+      <button class="nav" data-view="team">Team</button>
+      <button class="nav" data-view="alerts">Alerts <span id="alert-count" class="count" hidden></span></button>
+      <button class="nav" data-view="scorecard">Scorecard</button>
+      <button class="nav" data-view="add">Add a call</button>
+    </nav>
+
+    <main>
+      <section id="view-calls" class="view split">
+        <div class="calls-list" id="calls" aria-label="Calls"></div>
+        <div class="detail" id="detail">
+          <div class="hello">
+            <h2>Pick a call</h2>
+            <p>Every call goes through the same pipeline: speech-to-text, roles, privacy masking, metrics, then the model scores it against the scorecard. The server checks every score against the transcript before it counts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-team" class="view" hidden>
+        <h2>Team</h2>
+        <p class="muted">Averages over scored calls. A criterion counts only where its score was verified against the transcript.</p>
+        <div id="kpis" class="kpis"></div>
+        <h3>Managers</h3>
+        <div class="table-wrap"><table id="managers"></table></div>
+        <h3>Scorecard by manager <span class="muted">(share of the maximum score)</span></h3>
+        <div class="table-wrap"><table id="heatmap" class="heat"></table></div>
+      </section>
+
+      <section id="view-alerts" class="view" hidden>
+        <div class="row">
+          <h2>Alerts</h2>
+          <label class="switch"><input type="checkbox" id="outage"> Simulate a scoring provider outage</label>
+        </div>
+        <p class="muted">Red flags and low scores raise alerts as soon as a call is scored. With the outage switched on, re-score a call: it retries with a growing delay, the rule-based flags still arrive, and after three failures in a row the provider alert fires.</p>
+        <div id="alerts" class="list"></div>
+      </section>
+
+      <section id="view-scorecard" class="view" hidden>
+        <h2>Scorecard</h2>
+        <p class="muted" id="scorecard-note"></p>
+        <form id="scorecard-form">
+          <label class="inline">Pass mark <input type="number" id="pass-mark" min="0" max="100" step="5"></label>
+          <div id="criteria-edit"></div>
+          <button class="primary" type="submit" id="save-scorecard">Save and re-score all calls</button>
+          <span id="scorecard-status" class="muted"></span>
+        </form>
+      </section>
+
+      <section id="view-add" class="view" hidden>
+        <h2>Add a call</h2>
+        <p class="muted" id="add-note">Paste a transcript. Lines labelled <code>Manager:</code> and <code>Customer:</code> are treated as a stereo recording; any other labels (<code>Speaker 1:</code>, names) as a mono recording, where the pipeline has to work out who the manager is. <code>[01:05]</code> in front of a line sets its time.</p>
+        <form id="add-form" class="add">
+          <div class="fields">
+            <label>Manager <select id="add-manager"></select></label>
+            <label>Direction <select id="add-direction"><option value="inbound">inbound</option><option value="outbound">outbound</option></select></label>
+            <label>Company <input id="add-company" maxlength="80" placeholder="Customer company"></label>
+            <label>Contact <input id="add-contact" maxlength="80" placeholder="Contact name"></label>
+          </div>
+          <textarea id="add-text" rows="14" maxlength="20000"></textarea>
+          <div class="row">
+            <button class="primary" type="submit" id="add-submit">Score this call</button>
+            <button class="ghost" type="button" id="add-sample">Insert a sample</button>
+            <span id="add-status" class="muted"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "call-qa-demo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Sales call QA: diarized transcript → scorecard with verified evidence, red flags, coaching and team analytics",
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "calls": "tsx scripts/make-calls.ts",
+    "record": "tsx scripts/record.ts",
+    "screenshots": "tsx scripts/screenshots.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,26 @@
+id: c-110
+direction: outbound
+manager: u-anna
+company: Riverton Sports Centre
+contact: Grace Lin
+phone: +1 555 0137
+started: 2026-10-14T11:15
+audio: stereo
+language: en
+---
+C: Grace Lin speaking.
+M: Hi Grace, it's Anna Novak from Northwind Air. Is now a good time for five minutes about the changing room ventilation?
+C: Yes, go ahead.
+M: Last time you said the plan is three roof fans and the work must be done during the half-term closure. Is that still the plan?
+C: Yes, closure is from the twenty-sixth of October. But I looked at your quote, and the roof fans are on order, four to six weeks. That doesn't work for us.
+M: You're right, the NW-RF-315E is on order, I checked the stock this morning before calling. So I have two options for you. First, the NW-RF-400E is in stock. It's one size up, it covers your airflow with reserve, and with the EC motor you just run it slower, so it's not louder.
+C: And the price difference?
+M: It's three hundred thirty-five dollars more per fan, so about a thousand in total. Option two is to keep the three-fifteens and split the work: install the bases and ducts during closure and mount the fans in December, one evening of work.
+C: Splitting the work means paying the contractor twice.
+M: That's fair. If the budget allows the thousand, the four-hundreds are the simpler option. I can also ask my head of sales whether we can share part of the difference, since the delay is on our side, but I can't promise that before I get approval.
+C: Please ask. If you can meet us halfway, we'll go with the four-hundreds.
+M: I'll ask Olga today and call you back tomorrow before twelve with the answer and an updated quote. If we go ahead, the fans can ship the next business day after the order, so well before the twenty-sixth.
+C: Sounds good.
+M: Thank you, Grace. Talk to you tomorrow.
+C: Bye.
++9 C?: Thanks for watching!

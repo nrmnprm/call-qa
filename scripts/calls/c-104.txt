@@ -1,0 +1,27 @@
+id: c-104
+direction: inbound
+manager: u-priya
+company: Oakridge Hotels
+contact: Martin Shaw
+phone: +1 555 0168
+started: 2026-10-13T08:52
+audio: stereo
+language: en
+---
+M: Northwind Air, Priya speaking, how can I help?
+C: Priya, this is Martin Shaw, chief engineer at Oakridge Hotels, the Lakeside site. I have a problem. The roof fan you supplied in August is making a rattling noise and guests on the top floor are complaining. This is the second complaint this week.
+M: I'm sorry to hear that, Martin, especially with guests involved. Let me take the details so we can fix it quickly. Which model is it, and do you have the serial number from the label?
+C: It's the NW-RF-400E. Serial... one moment... NWR4 0 8 8 2 1.
+M: Thank you. When did the rattling start, and is it constant or only at certain speeds?
+C: About ten days ago. It's worse at night when the BMS drops the speed.
++1 M: That's a useful detail. At low speed a loose mounting or a damper flap can resonate. Has anyone been on the roof since the installation, any other works up there?
+C: The roofers were up there two weeks ago fixing the membrane, actually.
+M: That could be it, something may have been knocked loose. The fan is under warranty, so here's what I suggest: our service engineer, Mark Ellis, comes out to inspect it free of charge. Could he come on Wednesday morning?
+C: Wednesday works, but before ten, please, the guests check out after that and the lifts get busy.
+M: Understood, I'll book him for eight thirty on Wednesday. If it turns out to be a fan defect, we replace the part under warranty. If it's the mounting, he'll fix it on the spot.
+C: And if it keeps rattling until then?
+M: Meanwhile you could set the BMS minimum speed to forty percent instead of the lower setting; the rattle should mostly stop. It uses a bit more energy for two nights, but the guests will sleep.
+C: Okay, I'll ask my technician to do that today.
+M: I'll send you the confirmation with Mark's phone number within the next hour, and I'll open a service case so you have a reference number.
+C: Thank you, Priya. Appreciate the quick response.
+M: Of course, Martin. Talk soon.

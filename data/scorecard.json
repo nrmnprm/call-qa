@@ -1,0 +1,50 @@
+{
+ "passMark": 60,
+ "criteria": [
+  {
+   "id": "greeting",
+   "title": "Greeting and introduction",
+   "description": "Names the company and themselves at the start; on outbound calls also says why they are calling.",
+   "weight": 1
+  },
+  {
+   "id": "discovery",
+   "title": "Needs discovery",
+   "description": "Asks about the application, size or airflow, constraints (noise, controls, existing ducts) and the deadline before recommending anything. 1 = some questions, but key facts were never asked.",
+   "weight": 3
+  },
+  {
+   "id": "recommendation",
+   "title": "Relevant recommendation",
+   "description": "Recommends a specific product or solution and ties it to what the customer said. 1 = a product is named without a reason, or only a price range is given.",
+   "weight": 2
+  },
+  {
+   "id": "objections",
+   "title": "Objection handling",
+   "description": "Answers concerns about price, lead time or need with facts and alternatives. Giving in with a discount or a promise nobody checked counts as 0. Not applicable if the customer raised no concerns.",
+   "weight": 2,
+   "optional": true
+  },
+  {
+   "id": "closing",
+   "title": "Agreed next step",
+   "description": "Ends with a concrete next action, who does it and when (a day or date). 1 = an action without a date, or a vague 'let's talk later'.",
+   "weight": 3
+  },
+  {
+   "id": "listening",
+   "title": "Listening and tone",
+   "description": "Lets the customer finish, confirms what was said, stays polite and patient. 0 = repeatedly interrupts or is dismissive.",
+   "weight": 1
+  },
+  {
+   "id": "compliance",
+   "title": "Policy compliance",
+   "description": "No discount above 5% without the head of sales' approval, no delivery date earlier than the stock status allows, no card details taken over the phone. 0 = any of these happened.",
+   "weight": 2,
+   "critical": true,
+   "scoredByAbsence": true
+  }
+ ]
+}

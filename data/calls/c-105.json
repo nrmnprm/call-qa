@@ -1,0 +1,35 @@
+{
+ "id": "c-105",
+ "direction": "outbound",
+ "managerId": "u-priya",
+ "customer": {
+  "company": "Harbor Clinic",
+  "contact": "Dr. Ellen Moss",
+  "phone": "+1 555 0191"
+ },
+ "startedAt": "2026-10-13T10:30",
+ "language": "en",
+ "audio": {
+  "channels": 2,
+  "durationSec": 23
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 2.16,
+    "end": 10.5,
+    "channel": 1,
+    "text": "Hi, you've reached the office of Harbor Clinic. We're not available right now. Please leave a message after the tone.",
+    "confidence": 0.97
+   },
+   {
+    "start": 12.5,
+    "end": 21.31,
+    "channel": 0,
+    "text": "Hello, this is Priya from Northwind Air, calling about the filters you asked about. I'll send the details by email. Thank you.",
+    "confidence": 0.91
+   }
+  ]
+ }
+}

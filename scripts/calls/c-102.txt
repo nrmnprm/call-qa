@@ -1,0 +1,25 @@
+id: c-102
+direction: inbound
+manager: u-leo
+company: unknown (new lead)
+contact: Rita
+phone: +1 555 0179
+started: 2026-10-12T11:40
+audio: mono
+mono_manager: 1
+language: en
+---
+C: Hello, is this Northwind? I'm looking for a fan for a kitchen.
+M: Yeah. What do you need?
+C: Well, it's for a small café. We're opening next month and the hood we have is not pulling the smoke well.
+M: Kitchen fans start at around seven hundred and fifty dollars. The roof ones.
+C: Seven fifty? Okay. Is that the cheapest?
+M: Pretty much, yeah. There are bigger ones, those are more.
+C: Right. Do I need a roof one? We're on the ground floor of a three-storey building.
+M: Depends. Most people take the roof one.
+C: I see. I'll have to ask the landlord then.
+M: Sure.
+C: Can you send me something to look at?
+M: It's all on the website, the catalogue is there.
+C: Okay. Thanks.
+M: Bye.

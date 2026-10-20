@@ -1,0 +1,26 @@
+id: c-111
+direction: inbound
+manager: u-priya
+company: Lakeview Dental
+contact: Omar Haddad
+phone: +1 555 0122
+started: 2026-10-14T15:40
+audio: mono
+mono_manager: 1
+language: en
+---
+M: Good afternoon, Northwind Air, Priya speaking.
+C: Hi, Omar Haddad, Lakeview Dental. We're replacing the bathroom extract fans in the clinic, four small ones, a hundred millimetre ducts.
+M: Thanks, Omar. Are they on a light switch or running all the time?
+C: On the light switch, with a timer.
+M: Okay. And how long are the ducts, roughly? Straight out through the wall or through the ceiling?
+C: Through the ceiling, maybe four metres each.
+M: Then the NW-ID-100 will do it, eighty-five dollars each. There's also the EC version, the NW-ID-100E, at a hundred twenty-five; it's quieter and uses about half the power. For a clinic with patients nearby some customers prefer it.
+C: Forty dollars more each, hmm. What would you take?
+M: If the fans only run when the lights are on, the savings are small, so the standard one is perfectly fine. I'd only pick the EC one if noise matters in those rooms.
+C: Then the standard ones. Can you send a quote?
+M: Yes, four NW-ID-100 with delivery. Delivery is free above fifteen hundred dollars, so for this order there's a courier charge of twenty-five dollars. I'll email the quote today, and it's valid for fourteen days.
+C: Perfect. Email is omar at lakeviewdental dot com.
+M: Got it. If you confirm by Friday, they ship Monday.
+C: Great, thank you.
+M: Thank you, Omar, bye.

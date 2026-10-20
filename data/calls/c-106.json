@@ -1,0 +1,42 @@
+{
+ "id": "c-106",
+ "direction": "inbound",
+ "managerId": "u-anna",
+ "customer": {
+  "company": "unknown",
+  "contact": "unknown",
+  "phone": "+1 555 0100"
+ },
+ "startedAt": "2026-10-13T12:01",
+ "language": "en",
+ "audio": {
+  "channels": 2,
+  "durationSec": 11
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 1.97,
+    "end": 4.05,
+    "channel": 0,
+    "text": "Northwind Air, Anna speaking.",
+    "confidence": 0.95
+   },
+   {
+    "start": 4.66,
+    "end": 6.64,
+    "channel": 1,
+    "text": "Oh, sorry, wrong number.",
+    "confidence": 0.93
+   },
+   {
+    "start": 7.04,
+    "end": 8.53,
+    "channel": 0,
+    "text": "No problem, bye.",
+    "confidence": 0.91
+   }
+  ]
+ }
+}

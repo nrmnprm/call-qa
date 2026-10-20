@@ -1,0 +1,26 @@
+id: c-109
+direction: inbound
+manager: u-leo
+company: Greenway Schools
+contact: Hannah Price
+phone: +1 555 0155
+started: 2026-10-14T09:30
+audio: stereo
+language: en
+stt_failures: 1
+---
+M: Northwind Air, Leo.
+C: Hi Leo, Hannah Price from Greenway Schools. We have six classrooms where the CO2 levels are too high in the afternoons, and the facilities committee asked me to get options before the next meeting, which is—
+~M: Sure, classrooms, we do a lot of those. So basically what you want is a supply and extract unit per classroom, or you go central, central is cheaper per room but the ducting is a nightmare in old buildings, and we have the rectangular duct fans that work well, the sixty-thirties, they're in stock, and you can put them on a timer, a lot of schools do that, and honestly the EC ones pay for themselves in two winters.
+C: Okay, but the building is from the sixties and we can't really—
+~M: Yeah, old buildings, I know, that's why I'd say per classroom. Trust me.
+C: We actually already have ducts from the old system, they're just not connected to anything. What I wanted to ask is whether—
+~M: Oh, that's great then, then you just put fans on the existing ducts. Done.
+C: Right. Would someone be able to come and look at it?
+M: We don't really do site visits for small jobs, but send me the drawings and I'll have a look.
+C: How many people per classroom do you need to know? It's about thirty.
+M: Thirty, okay, then the sixty-thirties for sure.
+C: Alright. Where do I send the drawings?
+M: To sales at northwind dot com, put my name on it.
+C: Okay. Thanks, Leo.
+M: Cheers.

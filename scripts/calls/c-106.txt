@@ -1,0 +1,13 @@
+id: c-106
+direction: inbound
+manager: u-anna
+company: unknown
+contact: unknown
+phone: +1 555 0100
+started: 2026-10-13T12:01
+audio: stereo
+language: en
+---
+M: Northwind Air, Anna speaking.
+C: Oh, sorry, wrong number.
+M: No problem, bye.

@@ -1,0 +1,12 @@
+id: c-105
+direction: outbound
+manager: u-priya
+company: Harbor Clinic
+contact: Dr. Ellen Moss
+phone: +1 555 0191
+started: 2026-10-13T10:30
+audio: stereo
+language: en
+---
+C: Hi, you've reached the office of Harbor Clinic. We're not available right now. Please leave a message after the tone.
++2 M: Hello, this is Priya from Northwind Air, calling about the filters you asked about. I'll send the details by email. Thank you.

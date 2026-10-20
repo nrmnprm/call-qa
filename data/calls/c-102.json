@@ -1,0 +1,119 @@
+{
+ "id": "c-102",
+ "direction": "inbound",
+ "managerId": "u-leo",
+ "customer": {
+  "company": "unknown (new lead)",
+  "contact": "Rita",
+  "phone": "+1 555 0179"
+ },
+ "startedAt": "2026-10-12T11:40",
+ "language": "en",
+ "audio": {
+  "channels": 1,
+  "durationSec": 67
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 2.07,
+    "end": 7.28,
+    "speaker": 0,
+    "text": "Hello, is this Northwind? I'm looking for a fan for a kitchen.",
+    "confidence": 0.96
+   },
+   {
+    "start": 7.97,
+    "end": 10.4,
+    "speaker": 1,
+    "text": "Yeah. What do you need?",
+    "confidence": 0.94
+   },
+   {
+    "start": 10.9,
+    "end": 19.36,
+    "speaker": 0,
+    "text": "Well, it's for a small café. We're opening next month and the hood we have is not pulling the smoke well.",
+    "confidence": 0.92
+   },
+   {
+    "start": 20.39,
+    "end": 26.08,
+    "speaker": 1,
+    "text": "Kitchen fans start at around seven hundred and fifty dollars. The roof ones.",
+    "confidence": 0.98
+   },
+   {
+    "start": 26.98,
+    "end": 30.29,
+    "speaker": 0,
+    "text": "Seven fifty? Okay. Is that the cheapest?",
+    "confidence": 0.96
+   },
+   {
+    "start": 31.02,
+    "end": 35.38,
+    "speaker": 1,
+    "text": "Pretty much, yeah. There are bigger ones, those are more.",
+    "confidence": 0.94
+   },
+   {
+    "start": 35.91,
+    "end": 42.47,
+    "speaker": 0,
+    "text": "Right. Do I need a roof one? We're on the ground floor of a three-storey building.",
+    "confidence": 0.92
+   },
+   {
+    "start": 42.84,
+    "end": 45.84,
+    "speaker": 1,
+    "text": "Depends. Most people take the roof one.",
+    "confidence": 0.9
+   },
+   {
+    "start": 46.77,
+    "end": 50.87,
+    "speaker": 0,
+    "text": "I see. I'll have to ask the landlord then.",
+    "confidence": 0.97
+   },
+   {
+    "start": 51.63,
+    "end": 52.55,
+    "speaker": 1,
+    "text": "Sure.",
+    "confidence": 0.95
+   },
+   {
+    "start": 52.97,
+    "end": 56.39,
+    "speaker": 0,
+    "text": "Can you send me something to look at?",
+    "confidence": 0.91
+   },
+   {
+    "start": 56.98,
+    "end": 60.88,
+    "speaker": 1,
+    "text": "It's all on the website, the catalogue is there.",
+    "confidence": 0.93
+   },
+   {
+    "start": 61.67,
+    "end": 62.99,
+    "speaker": 0,
+    "text": "Okay. Thanks.",
+    "confidence": 0.95
+   },
+   {
+    "start": 63.94,
+    "end": 64.97,
+    "speaker": 1,
+    "text": "Bye.",
+    "confidence": 0.97
+   }
+  ]
+ }
+}

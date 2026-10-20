@@ -1,0 +1,133 @@
+{
+ "id": "c-110",
+ "direction": "outbound",
+ "managerId": "u-anna",
+ "customer": {
+  "company": "Riverton Sports Centre",
+  "contact": "Grace Lin",
+  "phone": "+1 555 0137"
+ },
+ "startedAt": "2026-10-14T11:15",
+ "language": "en",
+ "audio": {
+  "channels": 2,
+  "durationSec": 145
+ },
+ "stt": {
+  "provider": "simulated",
+  "utterances": [
+   {
+    "start": 1.64,
+    "end": 3.14,
+    "channel": 1,
+    "text": "Grace Lin speaking.",
+    "confidence": 0.91
+   },
+   {
+    "start": 3.75,
+    "end": 12.27,
+    "channel": 0,
+    "text": "Hi Grace, it's Anna Novak from Northwind Air. Is now a good time for five minutes about the changing room ventilation?",
+    "confidence": 0.93
+   },
+   {
+    "start": 13.05,
+    "end": 14.74,
+    "channel": 1,
+    "text": "Yes, go ahead.",
+    "confidence": 0.95
+   },
+   {
+    "start": 15.68,
+    "end": 25.93,
+    "channel": 0,
+    "text": "Last time you said the plan is three roof fans and the work must be done during the half-term closure. Is that still the plan?",
+    "confidence": 0.97
+   },
+   {
+    "start": 26.4,
+    "end": 38.31,
+    "channel": 1,
+    "text": "Yes, closure is from the twenty-sixth of October. But I looked at your quote, and the roof fans are on order, four to six weeks. That doesn't work for us.",
+    "confidence": 0.91
+   },
+   {
+    "start": 38.95,
+    "end": 59.42,
+    "channel": 0,
+    "text": "You're right, the NW-RF-315E is on order, I checked the stock this morning before calling. So I have two options for you. First, the NW-RF-400E is in stock. It's one size up, it covers your airflow with reserve, and with the EC motor you just run it slower, so it's not louder.",
+    "confidence": 0.93
+   },
+   {
+    "start": 60.22,
+    "end": 62.32,
+    "channel": 1,
+    "text": "And the price difference?",
+    "confidence": 0.95
+   },
+   {
+    "start": 63.29,
+    "end": 80.1,
+    "channel": 0,
+    "text": "It's three hundred thirty-five dollars more per fan, so about a thousand in total. Option two is to keep the three-fifteens and split the work: install the bases and ducts during closure and mount the fans in December, one evening of work.",
+    "confidence": 0.97
+   },
+   {
+    "start": 80.61,
+    "end": 84.08,
+    "channel": 1,
+    "text": "Splitting the work means paying the contractor twice.",
+    "confidence": 0.92
+   },
+   {
+    "start": 84.75,
+    "end": 102.92,
+    "channel": 0,
+    "text": "That's fair. If the budget allows the thousand, the four-hundreds are the simpler option. I can also ask my head of sales whether we can share part of the difference, since the delay is on our side, but I can't promise that before I get approval.",
+    "confidence": 0.94
+   },
+   {
+    "start": 103.39,
+    "end": 108.75,
+    "channel": 1,
+    "text": "Please ask. If you can meet us halfway, we'll go with the four-hundreds.",
+    "confidence": 0.91
+   },
+   {
+    "start": 109.75,
+    "end": 125.04,
+    "channel": 0,
+    "text": "I'll ask Olga today and call you back tomorrow before twelve with the answer and an updated quote. If we go ahead, the fans can ship the next business day after the order, so well before the twenty-sixth.",
+    "confidence": 0.97
+   },
+   {
+    "start": 125.83,
+    "end": 127.16,
+    "channel": 1,
+    "text": "Sounds good.",
+    "confidence": 0.95
+   },
+   {
+    "start": 127.79,
+    "end": 130.94,
+    "channel": 0,
+    "text": "Thank you, Grace. Talk to you tomorrow.",
+    "confidence": 0.93
+   },
+   {
+    "start": 131.37,
+    "end": 132.11,
+    "channel": 1,
+    "text": "Bye.",
+    "confidence": 0.91
+   },
+   {
+    "start": 141.11,
+    "end": 142.91,
+    "channel": 1,
+    "text": "Thanks for watching!",
+    "confidence": 0.41
+   }
+  ]
+ }
+}

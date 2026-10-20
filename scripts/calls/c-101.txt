@@ -1,0 +1,33 @@
+id: c-101
+direction: inbound
+manager: u-anna
+company: Brightline Facilities
+contact: Tom Keller
+phone: +1 555 0142
+started: 2026-10-12T09:14
+audio: stereo
+language: en
+---
+M: Northwind Air, Anna speaking. Good morning!
+C: Morning, Anna. This is Tom Keller from Brightline Facilities. We're refitting a meeting room on the third floor of an office we manage and the old extract fan just can't keep up.
+M: Thanks for calling, Tom. Let's find the right replacement. How big is the room and how many people use it at once?
+C: It's about ninety square metres, up to twenty-five people during workshops.
+M: Got it. Do you know the duct size and roughly how long the duct run is?
+C: Round duct, two hundred and fifty millimetres. The run is maybe eighteen metres with three bends and a grille at the end.
+M: That helps a lot. For twenty-five people you'd want around twelve hundred cubic metres an hour, and with that run I'd estimate two hundred fifty pascals of pressure. Is noise a concern? It sounds like the fan sits above the ceiling of the room itself?
+C: Yes, right above it. People complained the old one hums during presentations.
++1 M: Then I'd go for an EC model, it's quieter and you can turn the speed down when the room is half empty. Do you need a speed controller on the wall, or will it run from the building management system?
+C: BMS, ideally. We have a zero-to-ten volt output there.
+M: Perfect, the EC fans take zero-to-ten volts directly. When does the refit need to be finished?
+C: The contractor starts on the second of November.
+M: Okay. My first choice is the NW-ID-250E, inline EC, two-fifty spigot, so no adapters. It covers twelve hundred cubic metres at two-fifty pascals with some reserve. It's in transit right now, the system shows arrival on the twenty-first of October, so we'd still be well ahead of the second.
+C: And the price?
+M: List price is three hundred fifty-five dollars. I'd also add a silencer on the room side, about ninety dollars, that's what really takes the hum away.
+C: Hmm, the budget is tight. Is the silencer really needed?
+M: Fair question. Without it you'd hear about fifty decibels in the room; with it, under forty. Since the complaint was exactly the hum, I'd keep it. If budget is the issue, the fan itself is the piece I would not downgrade.
+C: Okay, makes sense. Can you send me a quote with both options, with and without the silencer?
+M: Of course. I'll email the quote with both options and the fan curve by Thursday, the fifteenth, before noon. Is tom.keller at brightline dot com still the right address?
+C: That's right.
+M: Great. And I'll call you on Friday morning to go through it, if that suits you.
+C: Friday works. Thanks, Anna.
+M: Thank you, Tom. Have a good day.
