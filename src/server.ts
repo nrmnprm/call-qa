@@ -5,6 +5,7 @@ import { readFile } from 'node:fs/promises'
 import { extname, join, normalize } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { checkModels, llmStatus } from './llm.ts'
+import { marginMarks, statusStrip } from './margin.ts'
 import { enqueue, enqueueAll, queueState, setOutage } from './pipeline.ts'
 import { addCustomCall, calls, COMPANY, managerById, managers, results, saveScorecard, scorecard } from './store.ts'
 import { teamSummary } from './team.ts'
@@ -118,7 +119,9 @@ async function api(req: IncomingMessage, res: ServerResponse, path: string) {
     if (!c) throw new HttpError(404, 'no such call')
     if (req.method === 'GET' && !one[2]) {
       const { stt, ...meta } = c
-      return send(res, 200, { call: { ...meta, manager: managerById(c.managerId)?.name, sttProvider: stt.provider }, item: listItem(c), result: results[c.id] ?? null })
+      const r = results[c.id]
+      const view = { strip: statusStrip(c, r), marks: r?.transcript ? marginMarks(r.assessment, r.transcript) : {} }
+      return send(res, 200, { call: { ...meta, manager: managerById(c.managerId)?.name, sttProvider: stt.provider }, item: listItem(c), result: r ?? null, view })
     }
     if (req.method === 'POST' && one[2]) {
       rateLimit(req, 6)

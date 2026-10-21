@@ -1,12 +1,17 @@
 process.env.DATA_WRITE = '0'
 process.env.LLM_CACHE_WRITE = '0'
+// Scoring in these tests replays data/llm-cache.json, never a live model.
+process.env.LLM_API_KEY = ''
+process.env.OPENROUTER_API_KEY = ''
 
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-const { calls, scorecard } = await import('../src/store.ts')
+import type { CallResult } from '../src/types.ts'
+const { calls, managerById, scorecard } = await import('../src/store.ts')
+const { marginMarks, statusStrip } = await import('../src/margin.ts')
 const { detectRoles, hallucinationReason, metricsOf, parsePasted, prepare, redact, skipReason } = await import('../src/transcript.ts')
 const { percentages, ruleFlags } = await import('../src/rules.ts')
-const { dueFromTranscript, mentionsTime, finalize, mergeFlags, reconcileDue, validate } = await import('../src/scorer.ts')
+const { dueFromTranscript, mentionsTime, finalize, mergeFlags, reconcileDue, score, validate } = await import('../src/scorer.ts')
 
 const call = (id: string) => calls.find((c) => c.id === id)!
 const prepared = (id: string) => prepare(call(id))
@@ -209,4 +214,38 @@ test('flags of the same kind merge into one, with every utterance kept', () => {
     { type: 'rudeness', utterance: 'U6', note: 'b', source: 'model' },
   ], t)
   assert.deepEqual(m.flags.map((f) => `${f.type}:${f.source}:${f.utterance}:${(f.also ?? []).join(',')}`), ['payment_data:rules + model:U5:U4', 'rudeness:model:U2:U6'])
+})
+
+/** c-108 as the demo shows it without a key: the recorded model answer, verified. */
+async function scored108(): Promise<CallResult> {
+  const c = call('c-108')
+  const transcript = prepare(c)
+  const out = await score(c, transcript, scorecard, managerById(c.managerId))
+  assert.ok(out.ok && out.source === 'replay', 'c-108 replays from the recording')
+  return { id: c.id, status: 'scored', attempts: { stt: 1, llm: 1 }, transcript, assessment: out.assessment, trace: [], updatedAt: '' }
+}
+
+test('the transcript margin shows each citing criterion with its verified score, and masks', async () => {
+  const r = await scored108()
+  const marks = marginMarks(r.assessment, r.transcript!)
+  const labels = (id: string) => (marks[id] ?? []).map((m) => m.label)
+  assert.ok(labels('U2').includes('GREETING 2/2'))
+  // Card details read out: the rules confirmed the breach, so the zero is theirs too.
+  assert.deepEqual(labels('U4'), ['LISTENING 2/2', 'COMPLIANCE 0/2 · RULE'])
+  assert.deepEqual(labels('U5'), ['COMPLIANCE 0/2 · RULE', 'MASKED'])
+  assert.equal(marks.U5.find((m) => m.label === 'MASKED')!.title, 'masked before analysis: card number, card details')
+  assert.equal(marks.U1, undefined)
+  // A model-only flag does not make the zero a rule's, and unknown ids are ignored.
+  const a = structuredClone(r.assessment!)
+  a.redFlags = a.redFlags.map((f) => ({ ...f, source: 'model' as const }))
+  a.criteria.find((c) => c.id === 'compliance')!.evidence.push('U99')
+  const m2 = marginMarks(a, r.transcript!)
+  assert.deepEqual(m2.U4.map((m) => m.label), ['LISTENING 2/2', 'COMPLIANCE 0/2'])
+  assert.equal(m2.U99, undefined)
+})
+
+test('the call header strip sums up id, duration, roles, criteria, flags and verdict', async () => {
+  const s = statusStrip(call('c-108'), await scored108()).map((x) => x.text)
+  assert.deepEqual(s, ['c-108', `${Math.floor(call('c-108').audio.durationSec / 60)}:${String(call('c-108').audio.durationSec % 60).padStart(2, '0')}`, 'roles by channel', '7 criteria · 1 n/a', '1 red flag', '50/100 · fail'])
+  assert.deepEqual(statusStrip(call('c-108'), undefined).map((x) => x.text).slice(2), ['queued'])
 })

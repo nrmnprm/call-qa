@@ -24,6 +24,8 @@ export const PROMPT_VERSION = 8
 const REPORT_LANGUAGE = process.env.REPORT_LANGUAGE ?? 'English'
 const FLAG_TYPES: FlagType[] = ['unapproved_discount', 'delivery_promise', 'payment_data', 'rudeness', 'other']
 const COMPLIANCE_FLAGS: FlagType[] = ['unapproved_discount', 'delivery_promise', 'payment_data']
+/** A policy breach the rules confirmed: only these may overrule the model's compliance score. */
+export const ruleBreach = (f: RedFlag) => COMPLIANCE_FLAGS.includes(f.type) && f.source !== 'model'
 export const COUNTED: CriterionResult['status'][] = ['scored', 'overridden', 'capped']
 
 const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -309,7 +311,7 @@ export function finalize(a: Omit<Assessment, 'total' | 'passed'>, card: Scorecar
   const notes: string[] = []
   const compliance = a.criteria.find((c) => c.id === 'compliance')
   // Only what the rules confirmed may overrule the model's own judgement.
-  const breaches = a.redFlags.filter((f) => COMPLIANCE_FLAGS.includes(f.type) && f.source !== 'model')
+  const breaches = a.redFlags.filter(ruleBreach)
   if (compliance && breaches.length && compliance.score !== 0) {
     compliance.notes.push(`model said ${compliance.score ?? 'nothing'}; set to 0: ${breaches.map((f) => f.note || f.type).join('; ')}`)
     compliance.score = 0

@@ -118,7 +118,7 @@ function highlight(ids) {
 const evChips = (ids) => ids.map((id) => el('span', { class: 'ev', onclick: () => highlight([id]), title: 'show in transcript' }, id))
 
 function renderDetail() {
-  const { call, item, result: r } = state.detail
+  const { call, item, result: r, view } = state.detail
   const box = $('#detail')
   box.replaceChildren()
   const a = r?.assessment
@@ -126,12 +126,13 @@ function renderDetail() {
   box.append(
     el('div', { class: 'head' },
       el('div', {},
+        el('div', { class: 'strip' }, view.strip.map((x) => el('span', { class: x.tone ?? null }, x.text))),
         el('h2', {}, call.customer.company),
         el('div', { class: 'facts' },
           el('span', {}, `${call.customer.contact}`),
           el('span', {}, `${call.manager}`),
           el('span', {}, when(call.startedAt)),
-          el('span', {}, `${call.direction} · ${dur(call.audio.durationSec)} · ${call.audio.channels === 2 ? 'stereo' : 'mono'} · ${call.language.toUpperCase()}`),
+          el('span', {}, `${call.direction} · ${call.audio.channels === 2 ? 'stereo' : 'mono'} · ${call.language.toUpperCase()}`),
         ),
       ),
       el('div', { class: 'row' },
@@ -184,7 +185,7 @@ function renderDetail() {
         el('table', { class: 'crit' },
           el('tr', {}, el('th', {}, 'Criterion'), el('th', { class: 'w' }, 'Weight'), el('th', {}, 'Score'), el('th', {}, 'Why')),
           a.criteria.map((c) =>
-            el('tr', {},
+            el('tr', { id: `crit-${c.id}` },
               el('td', {}, el('b', {}, c.title), el('br'), el('span', { class: `chip ${STATUS_CLASS[c.status]}` }, STATUS_CHIP[c.status])),
               el('td', { class: 'w' }, `×${c.weight}`),
               el('td', {}, c.score == null ? el('span', { class: 'muted' }, '—') : el('span', { class: `dots s${c.score}`, title: `${c.score} of 2` }, el('i'), el('i'))),
@@ -197,7 +198,7 @@ function renderDetail() {
   }
 
   if (r?.metrics) box.append(renderMetrics(r.metrics))
-  if (r?.transcript) box.append(renderTranscript(r.transcript))
+  if (r?.transcript) box.append(renderTranscript(r.transcript, view.marks))
 }
 
 function renderMetrics(m) {
@@ -215,19 +216,31 @@ function renderMetrics(m) {
   )
 }
 
-function renderTranscript(t) {
+function showCriterion(id) {
+  const row = document.getElementById(`crit-${id}`)
+  if (!row) return
+  row.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  row.classList.add('hl')
+  setTimeout(() => row.classList.remove('hl'), 1600)
+}
+
+const marginChips = (marks = []) => el('span', { class: 'marks' }, marks.map((m) =>
+  el('span', { class: `mark ${m.kind}`, title: m.title, onclick: m.criterion ? () => showCriterion(m.criterion) : null }, m.label)))
+
+function renderTranscript(t, marks) {
   const rows = [
     ...t.utterances.map((u) => ({ start: u.start, node: el('div', { class: `utt ${u.role}`, id: `utt-${u.id}` },
       el('span', { class: 't' }, mmss(u.start)),
       el('span', { class: 'id' }, u.id),
       el('span', { class: u.confidence < 0.6 ? 'lowconf' : null, title: `confidence ${u.confidence}` }, el('span', { class: 'who' }, u.role), textWithMasks(u.text)),
+      marginChips(marks[u.id]),
     ) })),
     ...t.dropped.map((d) => ({ start: d.start, node: el('div', { class: 'utt dropped', title: d.reason },
-      el('span', { class: 't' }, mmss(d.start)), el('span', { class: 'id' }, '—'), el('span', {}, `${d.text} `, el('span', { class: 'chip' }, `dropped: ${d.reason}`)),
+      el('span', { class: 't' }, mmss(d.start)), el('span', { class: 'id' }, '—'), el('span', {}, `${d.text} `, el('span', { class: 'chip' }, `dropped: ${d.reason}`)), el('span'),
     ) })),
   ].sort((a, b) => a.start - b.start)
   return el('div', { class: 'card' },
-    el('h3', {}, 'Transcript'),
+    el('h3', {}, 'Transcript ', el('span', { class: 'muted' }, '(scores in the margin: criteria citing each line)')),
     el('p', { class: 'muted' }, `Roles by ${t.roles.method}: ${t.roles.detail}.`, t.redactions.length ? ` Masked before analysis: ${[...new Set(t.redactions.map((x) => x.kind))].join(', ')}.` : ''),
     el('div', { class: 'transcript' }, rows.map((r) => r.node)),
   )

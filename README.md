@@ -47,6 +47,12 @@ approved, a complaint, a voicemail, a card number read out on the phone).
 - Next-step dates: "by Thursday" is checked against the calendar (small models count weekdays badly),
   a date the call never mentions is dropped, and a missing one is taken from the manager's own
   promise near the end ("I'll send it today and call you on Thursday").
+- The call view shows the evidence in the transcript margin: every line carries the scores that cite
+  it (`GREETING 2/2`, `COMPLIANCE 0/2 · RULE` where a rule confirmed the breach) and `MASKED` where
+  personal data was replaced. A mark jumps to its scorecard row; an evidence id there jumps back.
+  Above the call, one strip: call id, duration, how roles were assigned, criteria, red flags, verdict.
+
+![Scores in the transcript margin](docs/transcript.jpg)
 
 **Operations**
 

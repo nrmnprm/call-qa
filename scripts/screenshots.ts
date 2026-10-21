@@ -2,7 +2,7 @@
  * protocol (no Playwright needed). Start the demo first (`npm start`) and let
  * the queue finish, then:
  *
- *   npm run screenshots            # docs/call.jpg, docs/pipeline.jpg, docs/team.jpg
+ *   npm run screenshots            # docs/call.jpg, docs/transcript.jpg, docs/pipeline.jpg, docs/team.jpg
  *
  * CHROME=/path/to/chrome overrides the browser; THEME=dark for dark shots. */
 import { spawn } from 'node:child_process'
@@ -78,6 +78,12 @@ try {
   // A call that breaks policy: flags, overridden compliance, evidence chips.
   await open('c-103')
   await shot(`call${suffix}.jpg`)
+
+  // Scores in the transcript margin: a card number read out, masked, compliance zeroed by the rules.
+  await open('c-108')
+  await run(`document.getElementById('utt-U1').scrollIntoView({ block: 'start' })`)
+  await sleep(500)
+  await shot(`transcript${suffix}.jpg`)
 
   // Retry of speech-to-text, roles, masking and the model rounds.
   await open('c-108')
