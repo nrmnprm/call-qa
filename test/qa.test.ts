@@ -43,7 +43,7 @@ test('card numbers, card details and emails are masked before the model sees the
   const t = prepared('c-108')
   const u = t.utterances.find((x) => x.id === t.redactions.find((r) => r.kind === 'card number')!.utterance)!
   assert.equal(u.text, '[card number]. [card details]')
-  assert.ok(!/девятьсот|четыре два/.test(JSON.stringify(t.utterances)))
+  assert.ok(!/nine one two|four two seven six/i.test(JSON.stringify(t.utterances)))
   assert.equal(redact('My card is 4276 3800 1234 5678, expires 08/28.').text, 'My card is [card number], [card details]')
   assert.equal(redact('Email tom.keller at brightline dot com please').text, 'Email [email] please')
   assert.equal(redact('Call me on 555 0142 77').text, 'Call me on [phone]')
@@ -192,7 +192,7 @@ test('without a date from the model, the manager\'s promise at the end supplies 
   assert.deepEqual(dueFromTranscript(t, '2026-10-14')?.due, '2026-10-14')
   const pasted = prepare({ ...call('c-101'), stt: { provider: 'x', utterances: parsePasted('Manager: Hello.\nCustomer: Hi.\nManager: I can give five percent today.\nCustomer: Ok.\nManager: I will call you on Thursday morning.') } })
   assert.equal(dueFromTranscript(pasted, '2026-10-12')?.due, '2026-10-15')
-  assert.equal(dueFromTranscript(prepared('c-107'), '2026-10-13'), null, '"созвонимся как-нибудь" has no date')
+  assert.equal(dueFromTranscript(prepared('c-107'), '2026-10-13'), null, '"let\'s talk again sometime" has no date')
 })
 
 test('a next-step date is kept only if the call names a day or time', () => {
@@ -231,7 +231,7 @@ test('the transcript margin shows each citing criterion with its verified score,
   const labels = (id: string) => (marks[id] ?? []).map((m) => m.label)
   assert.ok(labels('U2').includes('GREETING 2/2'))
   // Card details read out: the rules confirmed the breach, so the zero is theirs too.
-  assert.deepEqual(labels('U4'), ['LISTENING 2/2', 'COMPLIANCE 0/2 · RULE'])
+  assert.deepEqual(labels('U4'), ['COMPLIANCE 0/2 · RULE'])
   assert.deepEqual(labels('U5'), ['COMPLIANCE 0/2 · RULE', 'MASKED'])
   assert.equal(marks.U5.find((m) => m.label === 'MASKED')!.title, 'masked before analysis: card number, card details')
   assert.equal(marks.U1, undefined)
@@ -240,12 +240,12 @@ test('the transcript margin shows each citing criterion with its verified score,
   a.redFlags = a.redFlags.map((f) => ({ ...f, source: 'model' as const }))
   a.criteria.find((c) => c.id === 'compliance')!.evidence.push('U99')
   const m2 = marginMarks(a, r.transcript!)
-  assert.deepEqual(m2.U4.map((m) => m.label), ['LISTENING 2/2', 'COMPLIANCE 0/2'])
+  assert.deepEqual(m2.U4.map((m) => m.label), ['COMPLIANCE 0/2'])
   assert.equal(m2.U99, undefined)
 })
 
 test('the call header strip sums up id, duration, roles, criteria, flags and verdict', async () => {
   const s = statusStrip(call('c-108'), await scored108()).map((x) => x.text)
-  assert.deepEqual(s, ['c-108', `${Math.floor(call('c-108').audio.durationSec / 60)}:${String(call('c-108').audio.durationSec % 60).padStart(2, '0')}`, 'roles by channel', '7 criteria · 1 n/a', '1 red flag', '50/100 · fail'])
+  assert.deepEqual(s, ['c-108', `${Math.floor(call('c-108').audio.durationSec / 60)}:${String(call('c-108').audio.durationSec % 60).padStart(2, '0')}`, 'roles by channel', '7 criteria · 1 n/a', '1 red flag', '42/100 · fail'])
   assert.deepEqual(statusStrip(call('c-108'), undefined).map((x) => x.text).slice(2), ['queued'])
 })

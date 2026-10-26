@@ -1,28 +1,28 @@
 id: c-107
 direction: inbound
 manager: u-nina
-company: СтройКомфорт
-contact: Алексей Громов
-phone: +7 900 555-01-27
+company: Cornerstone Builders
+contact: Alex Morgan
+phone: +1 555 0127
 started: 2026-10-13T14:20
 audio: mono
 mono_manager: 0
-language: ru
+language: en
 ---
-M: Northwind Air, Нина, добрый день.
-C: Добрый день. Меня зовут Алексей, компания СтройКомфорт. Мы делаем вентиляцию на складе, нужен совет по вентиляторам.
-M: Конечно, Алексей. Расскажите, что за склад: площадь, высота, что там хранится?
-C: Склад тысяча двести квадратов, потолки восемь метров. Хранят упаковку, картон, ничего особенного.
-M: Понятно. Людей там много работает, есть погрузчики на газу или дизеле?
-C: Человек десять, погрузчики электрические.
-M: Хорошо, тогда задача — общий воздухообмен, без вредностей. Вытяжка будет через кровлю или через стены?
-C: Через кровлю, там уже есть проёмы под четыре вентилятора, по пятьсот миллиметров.
-M: Под проёмы пятьсот подойдут крышные NW-RF-500E. Четыре штуки дадут примерно двадцать тысяч кубов в час, это около двух крат для вашего объёма. Для склада без вредностей этого обычно достаточно.
-C: А по цене сколько выйдет?
-M: По прайсу тысяча восемьсот семьдесят долларов за штуку, на четыре — семь тысяч четыреста восемьдесят. Они есть на складе.
-C: Дороговато. Нам заказчик бюджет режет.
-M: Понимаю. Можно рассмотреть модели без EC-двигателя, они дешевле, но регулировать скорость не получится. Если склад работает в одну смену, экономия на электричестве у EC заметная, но решать вам.
-C: Ладно, я посоветуюсь с главным инженером.
-M: Хорошо. Тогда созвонимся как-нибудь, когда будет понятно.
-C: Да, давайте. Спасибо.
-M: Всего доброго.
+M: Northwind Air, Nina speaking, good afternoon.
+C: Good afternoon. My name is Alex, from Cornerstone Builders. We're doing the ventilation for a warehouse and need some advice on fans.
+M: Of course, Alex. Tell me about the warehouse: floor area, height, what's stored there?
+C: Twelve hundred square metres, eight-metre ceilings. They store packaging and cardboard, nothing special.
+M: I see. How many people work there, and are there gas or diesel forklifts?
+C: About ten people, and the forklifts are electric.
+M: Good, then it's general air exchange with no contaminants. Will the extract go through the roof or through the walls?
+C: Through the roof, there are already openings for four fans, five hundred millimetres each.
+M: For five-hundred openings the NW-RF-500E roof fans will fit. Four of them give roughly twenty thousand cubic metres an hour, about two air changes for your volume. For a warehouse with no contaminants that's usually enough.
+C: And what would that cost?
+M: List price is eighteen hundred seventy dollars each, so seven thousand four hundred eighty for four. They're in stock.
+C: That's a bit steep. Our client keeps cutting the budget.
+M: I understand. We could look at models without the EC motor, they're cheaper, but you can't adjust the speed. If the warehouse runs one shift, the energy savings with EC are noticeable, but it's your call.
+C: Okay, I'll talk it over with our chief engineer.
+M: Sure. Then let's talk again sometime, once things are clearer.
+C: Yes, let's. Thanks.
+M: All the best.

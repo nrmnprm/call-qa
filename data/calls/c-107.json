@@ -3,136 +3,136 @@
  "direction": "inbound",
  "managerId": "u-nina",
  "customer": {
-  "company": "СтройКомфорт",
-  "contact": "Алексей Громов",
-  "phone": "+7 900 555-01-27"
+  "company": "Cornerstone Builders",
+  "contact": "Alex Morgan",
+  "phone": "+1 555 0127"
  },
  "startedAt": "2026-10-13T14:20",
- "language": "ru",
+ "language": "en",
  "audio": {
   "channels": 1,
-  "durationSec": 109
+  "durationSec": 116
  },
  "stt": {
   "provider": "simulated",
   "utterances": [
    {
     "start": 1.59,
-    "end": 4.19,
+    "end": 4.22,
     "speaker": 0,
-    "text": "Northwind Air, Нина, добрый день.",
+    "text": "Northwind Air, Nina speaking, good afternoon.",
     "confidence": 0.9
    },
    {
-    "start": 4.75,
-    "end": 12.44,
+    "start": 4.78,
+    "end": 13.66,
     "speaker": 1,
-    "text": "Добрый день. Меня зовут Алексей, компания СтройКомфорт. Мы делаем вентиляцию на складе, нужен совет по вентиляторам.",
+    "text": "Good afternoon. My name is Alex, from Cornerstone Builders. We're doing the ventilation for a warehouse and need some advice on fans.",
     "confidence": 0.92
    },
    {
-    "start": 13.16,
-    "end": 18.68,
+    "start": 14.39,
+    "end": 20.29,
     "speaker": 0,
-    "text": "Конечно, Алексей. Расскажите, что за склад: площадь, высота, что там хранится?",
+    "text": "Of course, Alex. Tell me about the warehouse: floor area, height, what's stored there?",
     "confidence": 0.94
    },
    {
-    "start": 19.57,
-    "end": 25.63,
+    "start": 21.18,
+    "end": 26.79,
     "speaker": 1,
-    "text": "Склад тысяча двести квадратов, потолки восемь метров. Хранят упаковку, картон, ничего особенного.",
+    "text": "Twelve hundred square metres, eight-metre ceilings. They store packaging and cardboard, nothing special.",
     "confidence": 0.96
    },
    {
-    "start": 25.99,
-    "end": 31.3,
+    "start": 27.15,
+    "end": 32.84,
     "speaker": 0,
-    "text": "Понятно. Людей там много работает, есть погрузчики на газу или дизеле?",
+    "text": "I see. How many people work there, and are there gas or diesel forklifts?",
     "confidence": 0.9
    },
    {
-    "start": 31.82,
-    "end": 34.04,
+    "start": 33.36,
+    "end": 36.84,
     "speaker": 1,
-    "text": "Человек десять, погрузчики электрические.",
+    "text": "About ten people, and the forklifts are electric.",
     "confidence": 0.92
    },
    {
-    "start": 34.73,
-    "end": 42.05,
+    "start": 37.53,
+    "end": 45.72,
     "speaker": 0,
-    "text": "Хорошо, тогда задача — общий воздухообмен, без вредностей. Вытяжка будет через кровлю или через стены?",
+    "text": "Good, then it's general air exchange with no contaminants. Will the extract go through the roof or through the walls?",
     "confidence": 0.94
    },
    {
-    "start": 42.9,
-    "end": 48.95,
+    "start": 46.58,
+    "end": 52.55,
     "speaker": 1,
-    "text": "Через кровлю, там уже есть проёмы под четыре вентилятора, по пятьсот миллиметров.",
+    "text": "Through the roof, there are already openings for four fans, five hundred millimetres each.",
     "confidence": 0.96
    },
    {
-    "start": 49.41,
-    "end": 62.95,
+    "start": 53.01,
+    "end": 67.22,
     "speaker": 0,
-    "text": "Под проёмы пятьсот подойдут крышные NW-RF-500E. Четыре штуки дадут примерно двадцать тысяч кубов в час, это около двух крат для вашего объёма. Для склада без вредностей этого обычно достаточно.",
+    "text": "For five-hundred openings the NW-RF-500E roof fans will fit. Four of them give roughly twenty thousand cubic metres an hour, about two air changes for your volume. For a warehouse with no contaminants that's usually enough.",
     "confidence": 0.91
    },
    {
-    "start": 63.58,
-    "end": 66.31,
+    "start": 67.84,
+    "end": 70.22,
     "speaker": 1,
-    "text": "А по цене сколько выйдет?",
+    "text": "And what would that cost?",
     "confidence": 0.93
    },
    {
-    "start": 66.97,
-    "end": 76.09,
+    "start": 70.89,
+    "end": 78.68,
     "speaker": 0,
-    "text": "По прайсу тысяча восемьсот семьдесят долларов за штуку, на четыре — семь тысяч четыреста восемьдесят. Они есть на складе.",
+    "text": "List price is eighteen hundred seventy dollars each, so seven thousand four hundred eighty for four. They're in stock.",
     "confidence": 0.94
    },
    {
-    "start": 76.59,
-    "end": 79.25,
+    "start": 79.18,
+    "end": 83.41,
     "speaker": 1,
-    "text": "Дороговато. Нам заказчик бюджет режет.",
+    "text": "That's a bit steep. Our client keeps cutting the budget.",
     "confidence": 0.92
    },
    {
-    "start": 80.25,
-    "end": 93.65,
+    "start": 84.41,
+    "end": 98.93,
     "speaker": 0,
-    "text": "Понимаю. Можно рассмотреть модели без EC-двигателя, они дешевле, но регулировать скорость не получится. Если склад работает в одну смену, экономия на электричестве у EC заметная, но решать вам.",
+    "text": "I understand. We could look at models without the EC motor, they're cheaper, but you can't adjust the speed. If the warehouse runs one shift, the energy savings with EC are noticeable, but it's your call.",
     "confidence": 0.97
    },
    {
-    "start": 94.49,
-    "end": 97.79,
+    "start": 99.77,
+    "end": 103.8,
     "speaker": 1,
-    "text": "Ладно, я посоветуюсь с главным инженером.",
+    "text": "Okay, I'll talk it over with our chief engineer.",
     "confidence": 0.96
    },
    {
-    "start": 98.49,
-    "end": 102.17,
+    "start": 104.5,
+    "end": 108.85,
     "speaker": 0,
-    "text": "Хорошо. Тогда созвонимся как-нибудь, когда будет понятно.",
+    "text": "Sure. Then let's talk again sometime, once things are clearer.",
     "confidence": 0.94
    },
    {
-    "start": 102.71,
-    "end": 104.48,
+    "start": 109.38,
+    "end": 110.94,
     "speaker": 1,
-    "text": "Да, давайте. Спасибо.",
+    "text": "Yes, let's. Thanks.",
     "confidence": 0.92
    },
    {
-    "start": 105.51,
-    "end": 107.11,
+    "start": 111.98,
+    "end": 113.82,
     "speaker": 0,
-    "text": "Всего доброго.",
+    "text": "All the best.",
     "confidence": 0.98
    }
   ]

@@ -6,7 +6,7 @@ the demo is what happens around the model: **every score has to cite the lines o
 that justify it, and the server, not the model, decides what counts.**
 
 Everything here is fictional: Northwind Air, a ventilation distributor, four sales managers and
-eleven calls written for the demo (English and Russian; good calls, rushed calls, a discount nobody
+eleven calls written for the demo (good calls, rushed calls, a discount nobody
 approved, a complaint, a voicemail, a card number read out on the phone).
 
 ![A call that broke policy](docs/call.jpg)
@@ -18,7 +18,7 @@ approved, a complaint, a voicemail, a card number read out on the phone).
 - Stereo recordings take roles from the channel (the office line is channel 0). Mono recordings only
   have "speaker 0" and "speaker 1" from diarization, so the manager is found by what they say: the
   one who introduces the company is the manager, the one who asks "is this Northwind?" is not.
-- Lines a speech model invents from silence ("Thanks for watching!", «Продолжение следует») and
+- Lines a speech model invents from silence ("Thanks for watching!" and its Russian twin) and
   filler are dropped, and shown struck through.
 - Card numbers (spoken digit by digit, in English or Russian), expiry dates, security codes, emails
   and phone numbers are masked **before** the text reaches a model or the result store.

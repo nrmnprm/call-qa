@@ -3,129 +3,129 @@
  "direction": "outbound",
  "managerId": "u-nina",
  "customer": {
-  "company": "Пекарня «Колос»",
-  "contact": "Марина Ершова",
-  "phone": "+7 900 555-01-84"
+  "company": "Golden Crust Bakery",
+  "contact": "Marina Evans",
+  "phone": "+1 555 0184"
  },
  "startedAt": "2026-10-14T10:05",
- "language": "ru",
+ "language": "en",
  "audio": {
   "channels": 2,
-  "durationSec": 99
+  "durationSec": 101
  },
  "stt": {
   "provider": "simulated",
   "utterances": [
    {
     "start": 1.88,
-    "end": 2.83,
+    "end": 2.76,
     "channel": 1,
-    "text": "Алло.",
+    "text": "Hello?",
     "confidence": 0.94
    },
    {
-    "start": 3.34,
-    "end": 12.37,
+    "start": 3.27,
+    "end": 12.13,
     "channel": 0,
-    "text": "Марина, добрый день! Это Нина, Northwind Air. Звоню по вашему заказу на вытяжку для цеха, счёт мы вчера отправили.",
+    "text": "Good afternoon, Marina! It's Nina, Northwind Air. I'm calling about your order for the bakery extract fan, we sent the invoice yesterday.",
     "confidence": 0.92
    },
    {
-    "start": 13.42,
-    "end": 23.21,
+    "start": 13.17,
+    "end": 24.26,
     "channel": 1,
-    "text": "Да-да, добрый день. Счёт получила. Слушайте, нам бухгалтерия долго платит, а мне надо быстрее. Можно я картой оплачу прямо сейчас?",
+    "text": "Yes, hello. I got the invoice. Listen, our accounts team takes ages to pay, and I need this faster. Can I just pay by card right now?",
     "confidence": 0.98
    },
    {
-    "start": 24.09,
-    "end": 26.51,
+    "start": 25.14,
+    "end": 28.82,
     "channel": 0,
-    "text": "Давайте, диктуйте номер карты.",
+    "text": "Sure, go ahead, read me the card number.",
     "confidence": 0.96
    },
    {
-    "start": 27.23,
-    "end": 40.01,
+    "start": 29.53,
+    "end": 41.58,
     "channel": 1,
-    "text": "Четыре два семь шесть, три восемь ноль ноль, один два три четыре, пять шесть семь восемь. Срок до ноль восьмой двадцать восьмого, код на обороте девятьсот двенадцать.",
+    "text": "Four two seven six, three eight zero zero, one two three four, five six seven eight. Expires zero eight twenty-eight, the security code on the back is nine one two.",
     "confidence": 0.94
    },
    {
-    "start": 40.56,
-    "end": 43.24,
+    "start": 42.13,
+    "end": 46.39,
     "channel": 0,
-    "text": "Записала, спасибо. Проведу оплату сегодня.",
+    "text": "Got it, thank you. I'll put the payment through today.",
     "confidence": 0.92
    },
    {
-    "start": 43.62,
-    "end": 45.76,
+    "start": 46.77,
+    "end": 49.4,
     "channel": 1,
-    "text": "Отлично. А когда привезёте?",
+    "text": "Great. And when will you deliver?",
     "confidence": 0.9
    },
    {
-    "start": 46.68,
-    "end": 57.3,
+    "start": 50.31,
+    "end": 61.7,
     "channel": 0,
-    "text": "Вентилятор NW-RF-400E есть на складе. Если оплата пройдёт сегодня до двух, отгрузим завтра, доставка один-два рабочих дня, то есть пятница или понедельник.",
+    "text": "The NW-RF-400E fan is in stock. If the payment goes through today before two, we ship tomorrow, delivery takes one to two working days, so Friday or Monday.",
     "confidence": 0.96
    },
    {
-    "start": 58.05,
-    "end": 60.85,
+    "start": 62.45,
+    "end": 65.29,
     "channel": 1,
-    "text": "Хорошо. А монтажник нужен ваш?",
+    "text": "Good. Do we need your installer?",
     "confidence": 0.95
    },
    {
-    "start": 61.43,
-    "end": 71.41,
+    "start": 65.87,
+    "end": 73.99,
     "channel": 0,
-    "text": "Монтаж мы не делаем, но можем порекомендовать двух подрядчиков, с которыми работают наши клиенты. Отправлю их контакты вам на почту сегодня.",
+    "text": "We don't do installation, but I can recommend two contractors our customers work with. I'll email you their contacts today.",
     "confidence": 0.93
    },
    {
-    "start": 72.39,
-    "end": 74.41,
+    "start": 74.98,
+    "end": 76.79,
     "channel": 1,
-    "text": "Спасибо, это поможет.",
+    "text": "Thanks, that helps.",
     "confidence": 0.97
    },
    {
-    "start": 74.86,
-    "end": 81.13,
+    "start": 77.24,
+    "end": 84.91,
     "channel": 0,
-    "text": "И ещё: на объект нужен контактный человек для приёмки, кто будет в пятницу?",
+    "text": "One more thing: we need a contact person on site to receive the delivery, who'll be there on Friday?",
     "confidence": 0.91
    },
    {
-    "start": 81.75,
-    "end": 85.84,
+    "start": 85.52,
+    "end": 89.05,
     "channel": 1,
-    "text": "Я сама буду, мой номер у вас есть.",
+    "text": "I'll be there myself, you have my number.",
     "confidence": 0.93
    },
    {
-    "start": 86.62,
-    "end": 92.17,
+    "start": 89.84,
+    "end": 95.38,
     "channel": 0,
-    "text": "Отлично. Тогда сегодня до вечера пришлю подтверждение отгрузки и контакты монтажников.",
+    "text": "Perfect. Then I'll send the shipping confirmation and the installers' contacts by tonight.",
     "confidence": 0.95
    },
    {
-    "start": 93.18,
-    "end": 95.68,
+    "start": 96.4,
+    "end": 98.24,
     "channel": 1,
-    "text": "Спасибо, Нина. До свидания.",
+    "text": "Thanks, Nina. Goodbye.",
     "confidence": 0.98
    },
    {
-    "start": 96.17,
-    "end": 97.45,
+    "start": 98.72,
+    "end": 99.48,
     "channel": 0,
-    "text": "До свидания.",
+    "text": "Goodbye.",
     "confidence": 0.92
    }
   ]

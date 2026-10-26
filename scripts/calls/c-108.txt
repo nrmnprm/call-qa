@@ -1,26 +1,26 @@
 id: c-108
 direction: outbound
 manager: u-nina
-company: Пекарня «Колос»
-contact: Марина Ершова
-phone: +7 900 555-01-84
+company: Golden Crust Bakery
+contact: Marina Evans
+phone: +1 555 0184
 started: 2026-10-14T10:05
 audio: stereo
-language: ru
+language: en
 ---
-C: Алло.
-M: Марина, добрый день! Это Нина, Northwind Air. Звоню по вашему заказу на вытяжку для цеха, счёт мы вчера отправили.
-C: Да-да, добрый день. Счёт получила. Слушайте, нам бухгалтерия долго платит, а мне надо быстрее. Можно я картой оплачу прямо сейчас?
-M: Давайте, диктуйте номер карты.
-C: Четыре два семь шесть, три восемь ноль ноль, один два три четыре, пять шесть семь восемь. Срок до ноль восьмой двадцать восьмого, код на обороте девятьсот двенадцать.
-M: Записала, спасибо. Проведу оплату сегодня.
-C: Отлично. А когда привезёте?
-M: Вентилятор NW-RF-400E есть на складе. Если оплата пройдёт сегодня до двух, отгрузим завтра, доставка один-два рабочих дня, то есть пятница или понедельник.
-C: Хорошо. А монтажник нужен ваш?
-M: Монтаж мы не делаем, но можем порекомендовать двух подрядчиков, с которыми работают наши клиенты. Отправлю их контакты вам на почту сегодня.
-C: Спасибо, это поможет.
-M: И ещё: на объект нужен контактный человек для приёмки, кто будет в пятницу?
-C: Я сама буду, мой номер у вас есть.
-M: Отлично. Тогда сегодня до вечера пришлю подтверждение отгрузки и контакты монтажников.
-C: Спасибо, Нина. До свидания.
-M: До свидания.
+C: Hello?
+M: Good afternoon, Marina! It's Nina, Northwind Air. I'm calling about your order for the bakery extract fan, we sent the invoice yesterday.
+C: Yes, hello. I got the invoice. Listen, our accounts team takes ages to pay, and I need this faster. Can I just pay by card right now?
+M: Sure, go ahead, read me the card number.
+C: Four two seven six, three eight zero zero, one two three four, five six seven eight. Expires zero eight twenty-eight, the security code on the back is nine one two.
+M: Got it, thank you. I'll put the payment through today.
+C: Great. And when will you deliver?
+M: The NW-RF-400E fan is in stock. If the payment goes through today before two, we ship tomorrow, delivery takes one to two working days, so Friday or Monday.
+C: Good. Do we need your installer?
+M: We don't do installation, but I can recommend two contractors our customers work with. I'll email you their contacts today.
+C: Thanks, that helps.
+M: One more thing: we need a contact person on site to receive the delivery, who'll be there on Friday?
+C: I'll be there myself, you have my number.
+M: Perfect. Then I'll send the shipping confirmation and the installers' contacts by tonight.
+C: Thanks, Nina. Goodbye.
+M: Goodbye.
