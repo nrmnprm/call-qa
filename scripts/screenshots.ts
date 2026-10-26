@@ -89,6 +89,9 @@ try {
   await open('c-108')
   await run(`[...document.querySelectorAll('.head button')].find((b) => b.textContent === 'Pipeline').click()`)
   await sleep(500)
+  // The transcript shot above left the page scrolled down.
+  await run(`document.querySelector('.steps').closest('.card').scrollIntoView({ block: 'start' })`)
+  await sleep(300)
   await shot(`pipeline${suffix}.jpg`)
 
   await open('team')
